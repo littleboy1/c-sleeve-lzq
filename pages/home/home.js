@@ -1,4 +1,3 @@
-import {config} from "../../config/config";
 import {Theme} from "../../model/theme";
 
 
@@ -20,12 +19,12 @@ Page({
    * model  logic manager
    * service manager
    */
-  onLoad: function (options) {
-    Theme.getHomeLocationA(data =>{
-      this.setData({
-        topTheme:data[0]
-      })
+  onLoad: async function (options) {
+    const data =await Theme.getHomeLocationA();
+    this.setData({
+      topTheme:data[0]
     })
+
   },
 
   /**

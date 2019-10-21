@@ -4,16 +4,13 @@ import {Http} from "../utils/http";
 
 class Theme {
     // 由于request方法是异步的所以所有的层级都是异步调用都需要传入callback
-    static getHomeLocationA(callBack){
-        Http.request({
-           url:'theme/by/names',
-           data:{
-               names:'t-1'
-           },
-           callBack:data=>{
-               callBack(data)
-           }
-        });
+    static async getHomeLocationA() {
+        return await Http.request({
+             url: 'theme/by/names',
+             data: {
+                 names: 't-1'
+             }
+         })
     }
 }
 export {

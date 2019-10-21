@@ -3,9 +3,11 @@ const promisic = function (func) {
         return new Promise((resolve, reject) => {
             const args = Object.assign(params,{
                 success:(res) =>{
+                    console.log(res)
                     resolve(res);
                 },
-                fail:(error) =>{
+                fail: (error) =>{
+                    console.log(error)
                     reject(error);
                 }
             });
