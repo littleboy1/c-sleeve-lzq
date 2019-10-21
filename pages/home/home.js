@@ -12,24 +12,15 @@ Page({
 
   /**
    * 生命周期函数--监听页面加载
+   * JS类型的约束
+   * 页面的JS文件不应该写业务逻辑
+   * view试图层  前端分层
+   * MVC controller
+   * model  logic manager
+   * service manager
    */
   onLoad: function (options) {
-      wx.request({
-        url:`${config.apiBaseUrl}theme/by/names`,
-        method:"GET",
-        data:{
-          names:'t-1'
-        },
-        header:{
-          appkey:`${config.appkey}`
-        },
-        success:res =>{
-          //回调函数this指代转向问题当前直的是回调函数的this
-        this.setData({
-            topTheme:res.data[0]
-          })
-        }
-      })
+
   },
 
   /**
