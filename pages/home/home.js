@@ -1,4 +1,5 @@
 import {config} from "../../config/config";
+import {Theme} from "../../model/theme";
 
 
 Page({
@@ -20,7 +21,11 @@ Page({
    * service manager
    */
   onLoad: function (options) {
-
+    Theme.getHomeLocationA(data =>{
+      this.setData({
+        topTheme:data[0]
+      })
+    })
   },
 
   /**
