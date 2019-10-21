@@ -1,11 +1,13 @@
-// pages/home/home.js
+import {config} from "../../config/config";
+
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    topTheme:null,
   },
 
   /**
@@ -13,13 +15,19 @@ Page({
    */
   onLoad: function (options) {
       wx.request({
-        url:'http://se.7yue.pro/vi/theme/by/names',
+        url:`${config.apiBaseUrl}theme/by/names`,
         method:"GET",
         data:{
           names:'t-1'
         },
         header:{
-          appkey:'WrXoBPqNXFZPSmF8'
+          appkey:`${config.appkey}`
+        },
+        success:res =>{
+          //回调函数this指代转向问题当前直的是回调函数的this
+        this.setData({
+            topTheme:res.data[0]
+          })
         }
       })
   },
