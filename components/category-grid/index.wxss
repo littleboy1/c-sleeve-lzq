@@ -26,3 +26,8 @@
     height: 60rpx;
     width: 60rpx;
 }
+.text{
+    margin-top: 6rpx;
+    font-size: 24rpx;
+    color: #333333;
+}
