@@ -1,0 +1,22 @@
+{
+  "name": "sleeve",
+  "version": "0.1.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "lin-ui": "~0.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/littleboy1/c-sleeve-lzq.git"
+  },
+  "author": "lzq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/littleboy1/c-sleeve-lzq/issues"
+  },
+  "homepage": "https://github.com/littleboy1/c-sleeve-lzq#readme"
+}
