@@ -1,0 +1,28 @@
+.container{
+    height: 320rpx;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+/*
+不可以直接给组件设置class应该使用组件的外部样式类
+*/
+.inner-container{
+    width: 730rpx;
+    height: 300rpx;
+    border:1px dashed #DCEBE6;
+
+}
+.grid-item{
+    width: 200rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img{
+    height: 60rpx;
+    width: 60rpx;
+}

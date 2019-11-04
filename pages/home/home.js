@@ -1,5 +1,6 @@
 import {Theme} from "../../model/theme";
 import {Banner} from "../../model/banner";
+import {Category} from "../../model/category";
 
 
 Page({
@@ -9,7 +10,8 @@ Page({
    */
   data: {
     themeA:null,
-    bannerB:null
+    bannerB:null,
+    grid:[]
   },
 
   /**
@@ -27,10 +29,13 @@ Page({
   async initAllData() {
     const data =await Theme.getHomeLocationA();
     const bannerB = await Banner.getHomeLocationB();
+    const grid  = await Category.getGridCategory();
     this.setData({
       themeA:data[0],
-      bannerB
+      bannerB,
+      grid
     })
+    console.log("当前返回的grid-----"+grid+"------")
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
