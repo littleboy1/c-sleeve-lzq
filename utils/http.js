@@ -16,7 +16,8 @@ class Http{
             data,
             method,
             header:{
-                appkey:config.appkey
+                appkey:config.appkey,
+                'content-type': 'application/x-www-form-urlencoded;charset=utf-8'
             }
         });
         return res.data
