@@ -46,6 +46,11 @@ O复杂度
 类的对象可以保存数据和对象
 保证调用方调用过程简单
 
+standard product unit 标准化产品单元
+
+sku  stock keeping unit 库存量单位
+技术输出  手记
+
 
 
 
