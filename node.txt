@@ -50,6 +50,11 @@ standard product unit 标准化产品单元
 
 sku  stock keeping unit 库存量单位
 技术输出  手记
+static 是否需要加通过考虑是否需要保存状态 一次性的获取可以直接加上static
+
+如果需要等待此次调用的结果就加await
+async强制保证一个方法返回promise
+所有的小程序都不支持驼峰的写法  需要将驼峰转化为-的形式例如SpuList - Spu-list
 
 
 
