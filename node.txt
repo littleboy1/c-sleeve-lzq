@@ -57,6 +57,15 @@ async强制保证一个方法返回promise
 所有的小程序都不支持驼峰的写法  需要将驼峰转化为-的形式例如SpuList - Spu-list
 
 enable-flex会导致容器特别大即使使用了flex布局也会出现这种情况，可以在内部添加一个view使用flew布局
+wxml只支持ES5  filter 过滤器
+
+也是JavaScript
+小程序的逻辑层 /视图层
+小程序运行原理
+IOS javaScriptCore  WKWebView
+Android V8  Xweb chrome
+PC Nw.js Chromium
+以web技术驱动
 
 
 
