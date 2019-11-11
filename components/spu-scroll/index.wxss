@@ -7,12 +7,12 @@
     height: 90rpx;
 }
 .price-unit{
-    font-size: 28rpx !important;
+    font-size: 24rpx !important;
     color: #157658 !important;
 }
 /*important提高CSS的权重*/
 .price-value{
-    font-size: 32rpx !important;
+    font-size: 26rpx !important;
     color: #157658 !important;
 }
 .spu-img{
@@ -38,4 +38,9 @@
     font-size: 20rpx;
     color: #666666;
     margin-top: 20rpx;
+    /*下面这些样式可以让多出的字段省略显示必须设置宽带无法保证文本的剧中*/
+    /*width: 150rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;*/
 }
