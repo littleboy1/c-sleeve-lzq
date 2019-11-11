@@ -1,0 +1,34 @@
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding-top: 40rpx;
+    background-color: #ffffff;
+}
+.title{
+    width: 690rpx;
+    height: 90rpx;
+}
+.inner-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*如果这里不设置宽度的话图片不会自动向两边靠拢的*/
+    width: 100%;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    width: 346rpx;
+    height: 522rpx;
+}
+.right-size{
+    width: 400rpx;
+    height: 260rpx;
+    display: flex;
+}
+

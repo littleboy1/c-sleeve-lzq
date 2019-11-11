@@ -21,4 +21,5 @@
     ></s-spu-scroll>
     <image src="{{themeF.entrance_img}}" class="quality"></image>
     <s-hot-list banner="{{bannerG}}"></s-hot-list>
+    <image src="{{themeH.entrance_img}}" class="fashion"></image>
 </view>
