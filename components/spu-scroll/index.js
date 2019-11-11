@@ -9,7 +9,7 @@ Component({
     theme:Object,
     spuList:Array
   },
-
+  externalClasses:['l-class'],
   /**
    * 组件的初始数据
    */

@@ -16,6 +16,8 @@
     <image class="activity" src="{{activityD.entrance_img}}"></image>
     <s-spu-scroll wx:if="{{themeE.online}}"
                   theme="{{themeE}}"
+                  l-class="spu-scroll"
                   spu-list="{{themeESpu}}"
     ></s-spu-scroll>
+    <image src="{{themeF.entrance_img}}" class="quality"></image>
 </view>

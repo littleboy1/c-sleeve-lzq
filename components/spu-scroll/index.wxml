@@ -1,5 +1,5 @@
 <wxs src="../../miniprogram_npm/lin-ui/filter/string.wxs" module="s"></wxs>
-<view class="container">
+<view class="container l-class">
     <image class="title" src="{{theme.title_img}}"></image>
     <scroll-view scroll-x class="scroll-view">
         <view class="inner">

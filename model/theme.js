@@ -26,6 +26,9 @@ class Theme {
      getHomeLocationE() {
         return  this.themes.find(theme => theme.name === Theme.locationE);
     }
+    getHomeLocationF() {
+        return  this.themes.find(theme => theme.name === Theme.locationF);
+    }
     static  getHomeLocationESpu(){
          return Theme.getThemeSpuByName(Theme.locationE);
     }

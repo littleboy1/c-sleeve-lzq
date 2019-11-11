@@ -69,5 +69,7 @@ PC Nw.js Chromium
 
 如何自定义代码片段：file -->setting---> Live Templates--->右边的+号添加template group 然后添加代码片段
 
+s-spu-scroll 有时候对自定义组件设置边距是无效的，应该使用外部样式类
+
 
 
