@@ -1,0 +1,8 @@
+<view class="container">
+    <image src="{{banner.img}}"></image>
+    <view class="inner-container">
+            <image src="{{left.img}}"></image>
+            <image src="{{rightTop.img}}"></image>
+            <image src="{{rightBottom.img}}"></image>
+    </view>
+</view>
