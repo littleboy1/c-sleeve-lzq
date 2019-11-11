@@ -67,5 +67,7 @@ Android V8  Xweb chrome
 PC Nw.js Chromium
 以web技术驱动
 
+如何自定义代码片段：file -->setting---> Live Templates--->右边的+号添加template group 然后添加代码片段
+
 
 
