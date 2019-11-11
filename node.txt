@@ -71,5 +71,7 @@ PC Nw.js Chromium
 
 s-spu-scroll 有时候对自定义组件设置边距是无效的，应该使用外部样式类
 
+点击态
+app.wxss是会不会影响自定义组件的
 
 
