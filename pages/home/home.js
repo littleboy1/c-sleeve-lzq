@@ -2,6 +2,7 @@ import {Theme} from "../../model/theme";
 import {Banner} from "../../model/banner";
 import {Category} from "../../model/category";
 import {Activity} from "../../model/Activity";
+import {SpuPaging} from "../../model/SpuPaging";
 
 
 Page({
@@ -32,6 +33,16 @@ Page({
    */
   onLoad: async function (options) {
     this.initAllData()
+    this.initBottomSpuList()
+  },
+  async initBottomSpuList(){
+    const paging = await SpuPaging.getLatestPaging()
+    const data = paging.getMoreData()
+    if(!data){
+      return null
+    }
+
+
   },
   async initAllData() {
     // const data =await Theme.getHomeLocationA();
