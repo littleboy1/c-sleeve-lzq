@@ -19,7 +19,8 @@ Page({
     bannerB:null,
     bannerG:null,
     grid:[],
-    activityD:null
+    activityD:null,
+    spuPaging:null
   },
 
   /**
@@ -39,8 +40,10 @@ Page({
     //如果在某些地方忘记加await返回的就是一个promis
     // e那样当前对象就是不可以使用的会导致对当前对象调用方法返回当前对象不是一个function的错误
     const paging = SpuPaging.getLatestPaging()
+    this.data.spuPaging = paging
     console.log(paging + "this id ")
    const data = await paging.getMoreData()
+
     if(!data){
       return null
     }
@@ -118,8 +121,13 @@ Page({
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
-
+  onReachBottom: async function () {
+    console.log("12344")
+    const data = await this.data.spuPaging.getMoreData();
+    if (!data) {
+      return
+    }
+    wx.lin.renderWaterFlow(data.items)
   },
 
   /**
