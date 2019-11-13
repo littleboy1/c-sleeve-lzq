@@ -20,7 +20,8 @@ Page({
     bannerG:null,
     grid:[],
     activityD:null,
-    spuPaging:null
+    spuPaging:null,
+    loadingType:'loading'
   },
 
   /**
@@ -128,6 +129,11 @@ Page({
       return
     }
     wx.lin.renderWaterFlow(data.items)
+    if (!data.moreData){
+      this.setData({
+        loadingType:'end'
+      })
+    }
   },
 
   /**

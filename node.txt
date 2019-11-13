@@ -110,3 +110,7 @@ aysnc 和await必须成对出现否则返回的是promise 会导致很多问题�
 
 如何让图片正确显示小程序的mode
 
+"onReachBottomDistance": 50距离底部多少的时候开始加载
+<l-loadmore show="true" size="mini">
+<view slot="content">如果不添加这个属性无法正常显示
+

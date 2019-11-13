@@ -4,7 +4,7 @@
     <view class="content-container">
         <text class="title">{{data.title}}</text>
         <view class="tags">
-            <block wx:for="{{tags}}">
+            <block wx:for="{{tags}}" wx:key="{{index}}">
                 <l-tag l-class="l-tag">{{item}}</l-tag>
             </block>
         </view>

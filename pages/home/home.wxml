@@ -1,4 +1,5 @@
-<view>
+<l-loadmore show="true" size="mini" end-text="this is lzq" type="{{loadingType}}">
+<view slot="content">
     <image class="top-theme" src="{{themeA.entrance_img}}"></image>
     <swiper class="swiper"
     indicator-dots
@@ -27,3 +28,4 @@
         <l-water-flow generic:l-water-flow-item="s-spu-preview"></l-water-flow>
     </view>
 </view>
+</l-loadmore>
