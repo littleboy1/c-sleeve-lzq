@@ -1,8 +1,8 @@
-import {Http} from "../utils/http";
 import {Paging} from "../utils/Paging";
 
+
 class SpuPaging{
-    static async getLatestPaging(){
+    static getLatestPaging(){
        const req = {
            url:`spu/latest`
        }

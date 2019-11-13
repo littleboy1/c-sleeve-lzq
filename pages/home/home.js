@@ -36,13 +36,17 @@ Page({
     this.initBottomSpuList()
   },
   async initBottomSpuList(){
-    const paging = await SpuPaging.getLatestPaging()
-    const data = paging.getMoreData()
+    //如果在某些地方忘记加await返回的就是一个promis
+    // e那样当前对象就是不可以使用的会导致对当前对象调用方法返回当前对象不是一个function的错误
+    const paging = SpuPaging.getLatestPaging()
+    console.log(paging + "this id ")
+   const data = await paging.getMoreData()
     if(!data){
       return null
     }
-
-
+    //自动累加数据 refresh 是为了清空瀑布流的数据
+    //组件出不来的问题 未引入组件   组件的名字写错了  数据结构错误 忘记await
+    wx.lin.renderWaterFlow(data.items)
   },
   async initAllData() {
     // const data =await Theme.getHomeLocationA();
