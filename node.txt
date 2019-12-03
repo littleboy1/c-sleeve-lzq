@@ -114,3 +114,17 @@ aysnc 和await必须成对出现否则返回的是promise 会导致很多问题�
 <l-loadmore show="true" size="mini">
 <view slot="content">如果不添加这个属性无法正常显示
 
+通过事件去传递参数 Eventchannel
+
+spu = standard product unit 标准化产品单元
+
+SKU= stock keeping unit 库存量单位
+
+SPU  商品/产品
+SKU  单品/商品
+
+复杂问题的解决方式：在页面组件等命名上具有符号化（业务中的关键词，命名重要性）抽象核心问题自定义组件是一个辅助思考的工具
+//变量命名的技巧：带上领域对象的前缀 sku sku-controller sku-xxxx(不建议) 抛开领域对象,复杂业务中不应出现通用的名字，简短的名字
+
+
+

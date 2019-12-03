@@ -1,0 +1,11 @@
+<view class="container">
+    <view>
+        <image></image>
+    </view>
+    <block wx:for="{{}}">
+        <s-fence></s-fence>
+    </block>
+    <view class="container-container">
+<!--        <l-counter></l-counter>-->
+    </view>
+</view>
